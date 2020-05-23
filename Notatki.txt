@@ -1,9 +1,0 @@
-1. Visual Studio Code
-2. JetBrains (Android Studio?)
-3. Visual Studio
-
-dariusz.kralewski@ug.edu.pl
-
-(Do koñca semestru rozruszanie GitHuba, 
-przes³anie na maila informacji, 
-ocena koñcowa)
