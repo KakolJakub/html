@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<input type="text" id="pole">
+<button onclick="addNumber();">Dodaj liczbę</button>
+<button onclick="findMax();">Pokaż największą liczbę</button>
+<button onclick="showAll();">Pokaż wszystkie liczby</button>
+<br>Największa liczba:
+<div id="wynik"></div>
+<script type="text/javascript">
+
+var tablica = [0];
+b=0;
+
+function addNumber()
+{
+	if(tablica.length<7)
+	{
+		a=document.getElementById("pole").value;
+		tablica[b]=a;
+		b++;
+		alert("Liczba nr "+b+" wynosi "+a);
+	}
+	else if(tablica.length>=7)
+	{
+		alert("Już dodano maksymalną ilość liczb (7).");
+	}
+}
+
+function findMax()
+{
+	var max = 0;
+	for (var i=0; i <= tablica.length; i++) 
+	{
+		if (max <= tablica[i]) 
+		{
+		max = tablica[i];
+		}
+	}
+	document.getElementById("wynik").innerHTML=max;
+}
+
+function showAll()
+{
+if(tablica.length>=7)
+{
+alert("Liczby: "+tablica[0]+","+tablica[1]+","+tablica[2]+","+tablica[3]+","+tablica[4]+","+tablica[5]+","+tablica[6]);
+}
+else
+{
+alert("Nie podano jeszcze wszystkich 7 liczb.");
+}
+}
+
+</script>
+</body>
